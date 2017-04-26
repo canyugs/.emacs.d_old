@@ -18,3 +18,9 @@
 ;; Elpy python mode
 (elpy-enable)
 (elpy-use-ipython)
+
+;; Magit: gitman
+(setq magit-view-git-manual-method 'man)
+
+;; Magit: shortcut
+(global-set-key (kbd "C-x g") 'magit-status)
