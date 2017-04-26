@@ -5,3 +5,5 @@ auto-save-list/*
 elpa/*.txt
 *.pyc
 #*#
+elpa/archives/*
+elpa/*/*/*.pyc
