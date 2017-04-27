@@ -19,7 +19,8 @@
 (elpy-enable)
 (elpy-use-ipython)
 
-
+;; Key binding
+(global-set-key (kbd "C-x g") 'magit-status)
 
 ;; ======================
 ;; Emacs 自動生成, 不要動
