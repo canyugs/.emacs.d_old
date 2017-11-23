@@ -47,7 +47,7 @@
     ("8db4b03b9ae654d4a57804286eb3e332725c84d7cdab38463cb6b97d5762ad26" default)))
  '(package-selected-packages
    (quote
-    (color-theme color-theme-solarized groovy-imports groovy-mode jedi magit python py-autopep8 flycheck elpy))))
+    (multi-term color-theme color-theme-solarized groovy-imports groovy-mode jedi magit python py-autopep8 flycheck elpy))))
 (custom-set-faces
  ;; custom-set-faces was added by Custom.
  ;; If you edit it by hand, you could mess it up, so be careful.
