@@ -15,22 +15,24 @@
 (when (not package-archive-contents)
   (package-refresh-contents))
 
-
-
-;; Startup
-
 ;; Elpy python mode
 (elpy-enable)
 (elpy-use-ipython)
 
-;; Key binding
+;; Key binding (magit)
 (global-set-key (kbd "C-x g") 'magit-status)
 
-;; Theme
+;; Key binding (Org mode)
+(global-set-key "\C-cl" 'org-store-link)
+(global-set-key "\C-ca" 'org-agenda)
+(global-set-key "\C-cc" 'org-capture)
+(global-set-key "\C-cb" 'org-iswitchb)
+
+;; Color-Theme
 (require 'color-theme)
 (color-theme-initialize)
-
-(load "color-theme-solarized")
+;; Default theme
+;; (load "color-theme-clarity")
 
 
 ;; ======================
@@ -45,9 +47,10 @@
  '(custom-safe-themes
    (quote
     ("8db4b03b9ae654d4a57804286eb3e332725c84d7cdab38463cb6b97d5762ad26" default)))
+ '(org-agenda-files nil)
  '(package-selected-packages
    (quote
-    (multi-term color-theme color-theme-solarized groovy-imports groovy-mode jedi magit python py-autopep8 flycheck elpy))))
+    (multi-term color-theme jedi magit python py-autopep8 flycheck elpy))))
 (custom-set-faces
  ;; custom-set-faces was added by Custom.
  ;; If you edit it by hand, you could mess it up, so be careful.
