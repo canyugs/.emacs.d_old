@@ -19,6 +19,20 @@
 (elpy-enable)
 (elpy-use-ipython)
 
+;; Key binding (Buffer)
+(require 'ibuffer)
+(global-set-key (kbd "C-x C-b") 'ibuffer)
+
+;; Key binding (Windows)
+(global-set-key (kbd "M-S") 'windmove-up)
+(global-set-key (kbd "M-X") 'windmove-down)
+(global-set-key (kbd "M-C") 'windmove-right)
+(global-set-key (kbd "M-Z") 'windmove-left)
+
+;; Key binding (Frame)
+(global-set-key (kbd "<f11>") (lambda () (interactive) (other-frame 1)))
+(global-set-key (kbd "<f12>") (lambda () (interactive) (other-frame -1)))
+
 ;; Key binding (magit)
 (global-set-key (kbd "C-x g") 'magit-status)
 
