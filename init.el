@@ -64,7 +64,7 @@
  '(org-agenda-files nil)
  '(package-selected-packages
    (quote
-    (multi-term color-theme jedi magit python py-autopep8 flycheck elpy))))
+    (flymake-go go-mode multi-term color-theme jedi magit python py-autopep8 flycheck elpy))))
 (custom-set-faces
  ;; custom-set-faces was added by Custom.
  ;; If you edit it by hand, you could mess it up, so be careful.
