@@ -44,10 +44,18 @@
 
 ;; Color-Theme
 (require 'color-theme)
-(color-theme-initialize)
-;; Default theme
-;; (load "color-theme-clarity")
+(eval-after-load "color-theme"
+  '(progn
+     (color-theme-initialize)
+     ;; set default
+     (color-theme-clarity)))
 
+;; indent
+(setq-default indent-tabs-mode nil)
+
+;; c mode
+(setq-default c-default-style "k&r"
+              c-basic-offset 4)
 
 ;; ======================
 ;; Emacs 自動生成, 不要動
@@ -64,7 +72,7 @@
  '(org-agenda-files nil)
  '(package-selected-packages
    (quote
-    (flymake-go go-mode multi-term color-theme jedi magit python py-autopep8 flycheck elpy))))
+    (neotree go-eldoc flymake-go go-mode multi-term color-theme jedi magit python py-autopep8 flycheck elpy))))
 (custom-set-faces
  ;; custom-set-faces was added by Custom.
  ;; If you edit it by hand, you could mess it up, so be careful.
