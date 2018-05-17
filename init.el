@@ -42,6 +42,9 @@
 (global-set-key "\C-cc" 'org-capture)
 (global-set-key "\C-cb" 'org-iswitchb)
 
+;; Key binding (NeoTree)
+(global-set-key [f8] 'neotree-toggle)
+
 ;; Color-Theme
 (require 'color-theme)
 (eval-after-load "color-theme"
