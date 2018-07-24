@@ -78,7 +78,7 @@
  '(org-agenda-files nil)
  '(package-selected-packages
    (quote
-    (python-mode python-pytest flycheck-pycheckers indent-info indent-tools flycheck-yamllint yaml-mode all-the-icons-dired neotree go-eldoc go-mode multi-term color-theme jedi magit python py-autopep8 flycheck elpy))))
+    (docker-compose-mode dockerfile-mode python-mode python-pytest flycheck-pycheckers indent-info indent-tools flycheck-yamllint yaml-mode all-the-icons-dired neotree go-eldoc go-mode multi-term color-theme jedi magit python py-autopep8 flycheck elpy))))
 (custom-set-faces
  ;; custom-set-faces was added by Custom.
  ;; If you edit it by hand, you could mess it up, so be careful.
